@@ -1,9 +1,11 @@
-$font1: Roboto, sans-serif
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic)
+
+$font1: Poppins
 $color1: #039be5
 
-.containerCards
+.cardContainer
     display: flex
-
+    justify-content: space-between
 
 .card
     display: block
@@ -17,7 +19,7 @@ $color1: #039be5
     background-color: #039be5
     height: 45px
     margin: 0
-    font: $font1
+    font-family: $font1
     text-align: center
     border-top-left-radius: 18px
     border-top-right-radius: 18px
@@ -28,7 +30,7 @@ $color1: #039be5
     background-color: #C4C4C4
     height: 65px
     margin-top: 190px
-    font: $font1
+    font-family: $font1
     text-align: center
     border-bottom-left-radius: 18px
     border-bottom-right-radius: 18px
