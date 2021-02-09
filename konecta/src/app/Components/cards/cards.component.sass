@@ -4,8 +4,11 @@ $font1: Poppins
 $color1: #039be5
 
 .cardContainer
-    display: flex
-    justify-content: space-between
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    grid-template-rows: 70%
+    padding-top: 10%
+    margin-left: 10%
 
 .card
     display: block
@@ -19,6 +22,10 @@ $color1: #039be5
     background-color: #039be5
     height: 45px
     margin: 0
+    font-family: $font1
+    text-align: center
+    border-top-left-radius: 18px
+    border-top-right-radius: 18px
     font-family: $font1
     text-align: center
     border-top-left-radius: 18px
