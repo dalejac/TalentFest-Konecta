@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { from } from 'rxjs';
+import { DataService } from '../../Services/data.service';
 
 @Component({
   selector: 'app-cards',
@@ -7,9 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CardsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private tags:DataService) { }
 
   ngOnInit(): void {
   }
-
+  getDataTags(){
+    this.tags.getDataTags().subscribe((res:any)=>{
+      return console.log(res);
+    })
+  }
 }
