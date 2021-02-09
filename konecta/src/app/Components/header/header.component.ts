@@ -12,4 +12,7 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  out(): void {
+    if(document.getElementById('open-close').style.display='none'){document.getElementById('open-close').style.display='block'}
+  }
 }
