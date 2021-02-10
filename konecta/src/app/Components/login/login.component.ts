@@ -40,7 +40,6 @@ export class LoginComponent implements OnInit {
       debounceTime(200),
       distinctUntilChanged()
     ).subscribe((value) => {
-      console.log(value)
       if(value === 100 && this.form.valid) {
         this.formElement.onSubmit(undefined)
       } else {
