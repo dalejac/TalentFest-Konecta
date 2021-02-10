@@ -10,6 +10,7 @@ import { NavComponent } from './Components/nav/nav.component';
 import { CardsContainerComponent } from './Components/cards-container/cards-container.component';
 import { CardsComponent } from './Components/cards/cards.component';
 import { from } from 'rxjs';
+import { LimitTextPipe } from './Pipes/limit-text.pipe';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { from } from 'rxjs';
     HeaderComponent,
     NavComponent,
     CardsContainerComponent,
-    CardsComponent
+    CardsComponent,
+    LimitTextPipe
   ],
   imports: [
     BrowserModule,

@@ -19,7 +19,7 @@ export class CardsContainerComponent implements OnInit {
   }
   getKeyWord() {
     this.dataService.getKeyWord().subscribe((res: any) => {
-      console.log(res.length);
+      console.log(res);
       return this.data = res;
     })
   }
