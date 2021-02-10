@@ -1,6 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { from } from 'rxjs';
-import { DataService } from '../../Services/data.service';
+import { Component, OnInit, Input } from '@angular/core';
+
 
 @Component({
   selector: 'app-cards',
@@ -8,14 +7,12 @@ import { DataService } from '../../Services/data.service';
   styleUrls: ['./cards.component.sass']
 })
 export class CardsComponent implements OnInit {
+  @Input() element: any   
 
-  constructor(private tags:DataService) { }
+  constructor() { }
 
   ngOnInit(): void {
+  
   }
-  getDataTags(){
-    this.tags.getDataTags().subscribe((res:any)=>{
-      return console.log(res);
-    })
-  }
+  
 }
