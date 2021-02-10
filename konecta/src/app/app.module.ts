@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
+import  Quill  from 'quill';
 
 import { AppComponent } from './app.component';
 import { LayoutComponent } from './Components/layout/layout.component';
@@ -24,7 +25,8 @@ import { from } from 'rxjs';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    Quill.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
