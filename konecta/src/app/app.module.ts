@@ -11,6 +11,8 @@ import { CardsContainerComponent } from './Components/cards-container/cards-cont
 import { CardsComponent } from './Components/cards/cards.component';
 import { from } from 'rxjs';
 import { LimitTextPipe } from './Pipes/limit-text.pipe';
+import { LoginComponent } from './Components/login/login.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -21,12 +23,14 @@ import { LimitTextPipe } from './Pipes/limit-text.pipe';
     NavComponent,
     CardsContainerComponent,
     CardsComponent,
-    LimitTextPipe
+    LimitTextPipe,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
