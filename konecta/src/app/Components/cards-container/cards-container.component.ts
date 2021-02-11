@@ -14,6 +14,7 @@ export class CardsContainerComponent implements OnInit {
   data$: Observable<any[]>
   constructor(private dataService: DataService) { }
 
+
   ngOnInit(): void {
     this.data$ = this.dataService.data$.pipe(
       map((res) => {
@@ -30,8 +31,5 @@ export class CardsContainerComponent implements OnInit {
       return res
       })
     )
-
   }
-
 }
-
