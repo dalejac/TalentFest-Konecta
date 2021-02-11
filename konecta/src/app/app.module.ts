@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
-import  Quill  from 'quill';
 
 import { AppComponent } from './app.component';
 import { LayoutComponent } from './Components/layout/layout.component';
@@ -11,6 +10,9 @@ import { NavComponent } from './Components/nav/nav.component';
 import { CardsContainerComponent } from './Components/cards-container/cards-container.component';
 import { CardsComponent } from './Components/cards/cards.component';
 import { from } from 'rxjs';
+import { LimitTextPipe } from './Pipes/limit-text.pipe';
+import { LoginComponent } from './Components/login/login.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -20,13 +22,15 @@ import { from } from 'rxjs';
     HeaderComponent,
     NavComponent,
     CardsContainerComponent,
-    CardsComponent
+    CardsComponent,
+    LimitTextPipe,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    Quill.forRoot()
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

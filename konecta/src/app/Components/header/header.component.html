@@ -1,10 +1,15 @@
 <header>
-    
-    <img src='/assets/nik_logo.png'>
-    <input type="search" class="search-bar" placeholder="🔍 search" (keyup)="onKey($event)">
-    {{ values }}
-    <div>
+    <a routerLink="home">
+      <img src='/assets/nik_logo.png'>
+    </a>
+
+    <input (change)="setSearchTerm($event.target.value)" type="search" class="search-bar" placeholder="🔍 search">
+      <div class="iconos">
     <button><i class="fas fa-bell"></i></button>
-    <button (click)="out()">Juanita Garcia<i class="fas fa-sort-down"></i></button>
+    <p>Juanita Garcia</p>
+    
+    <button (click)="out()"><i class="fas fa-sort-down"></i></button>
+    <p (click)="logOut()">cerrar sesion</p>
     </div>
+  
 </header>
