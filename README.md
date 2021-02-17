@@ -43,7 +43,7 @@ Se puede visualizar la página en este link: (https://nik-konecta.netlify.app/),
 ## 5. Contribuyentes
 
 #### Squad
-<p align="center"> <img src="https://github.com/dalejac/TalentFest-Konecta/files/5992943/To.the.New.Parents.pdf" width="1000"> </p>
+<p align="center"> <img src="" width="1000"> </p>
 
 
 
