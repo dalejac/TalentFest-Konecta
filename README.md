@@ -43,7 +43,7 @@ Se puede visualizar la página en este link: (https://nik-konecta.netlify.app/),
 ## 5. Contribuyentes
 
 #### Squad
-<p align="center"> <img src="" width="1000"> </p>
+<p align="center"> <img src="https://user-images.githubusercontent.com/65794191/108213138-b5da8a80-70fc-11eb-816d-c49125a66bed.jpg" width="1000"> </p>
 
 
 
